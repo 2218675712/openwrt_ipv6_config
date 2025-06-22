@@ -137,7 +137,7 @@ WAN > 高级设置 > IPv6 分配长度
 
 EUI-64 可以让设备的后缀地址由 MAC 地址生成，因此可以生成唯一的后缀。
 
-EUI-64 网络地址分配方式的技术解释可以看 ImmortalWrt 仓库的文档：[immortalwrt/user-FAQ/关于eui64的一些说明](https://web.archive.org/web/20250410000101/https://github.com/immortalwrt/user-FAQ/blob/main/关于eui64的一些说明.md)
+EUI-64 网络地址分配方式的技术解释可以看 ImmortalWrt 仓库的文档：[immortalwrt/user-FAQ/关于eui64的一些说明](/关于eui64的一些说明.md)
 
 同时我们需要禁止 OpenWrt 通告 IPv6 地址的 DNS，因为设备只需要 OpenWrt 的 IPv4 DNS 地址即可实现 IPv6 解析。
 
