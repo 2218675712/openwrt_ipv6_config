@@ -216,11 +216,6 @@ EUI-64 网络地址分配方式的技术解释可以看 ImmortalWrt 仓库的文
 一句话解释：
 **你可以直接使用 IPv4 DNS （比如路由本身的192.168.1.1）来取得 IPv6 解析结果，不需要去折腾 IPv6 相关的 DNS 设置，让 OpenWrt 不要向下游设备通告 IPv6 DNS 地址即可，可以避免很多问题**
 
-- # [OpenClash 设置方案](https://web.archive.org/web/20250410000101/https://github.com/Aethersailor/Custom_OpenClash_Rules/wiki/OpenClash-设置方案)
-
-
-
-讲解本项目相关的 OpenClash 设置方法。
 
 - # [OpenWrt IPv6 设置方案](https://web.archive.org/web/20250410000101/https://github.com/Aethersailor/Custom_OpenClash_Rules/wiki/OpenWrt-IPv6-设置方案)
 
@@ -229,12 +224,6 @@ EUI-64 网络地址分配方式的技术解释可以看 ImmortalWrt 仓库的文
 讲解如何设置并优雅的使用 OpenWrt 的 IPv6 功能。
 
 - # [无插件广告拦截设置方案](https://web.archive.org/web/20250410000101/https://github.com/Aethersailor/Custom_OpenClash_Rules/wiki/无插件广告拦截功能设置方案)
-
-
-
-讲解如何使 OpenClash 和 Dnsmasq 搭配实现无需第三方插件参与的广告拦截设置方法。
-
-- # [故障排除](https://web.archive.org/web/20250410000101/https://github.com/Aethersailor/Custom_OpenClash_Rules/wiki/故障排除)
 
 
 
