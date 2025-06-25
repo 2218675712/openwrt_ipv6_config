@@ -55,9 +55,9 @@
 1.  **DHCP Server 设置**：
     *   进入 LAN 接口的 DHCP Server 设置。
     *   在 `IPv6 Settings` 中：
-        *   `RA-Service` 设置为 `relay mode`。
-        *   `DHCPv6-Service` 设置为 `hybrid`。
-        *   `NDP-Proxy` 设置为 `relay mode`。
+        *   `RA-Service` 设置为 `relay mode`（中继模式）。
+        *   `DHCPv6-Service` 设置为 `hybrid`（混合模式）。
+        *   `NDP-Proxy` 设置为 `relay mode`（中继模式）。
 
 2.  **Local IPv6 DNS server**：
     *   勾选 `Local IPv6 DNS server`（本地 IPv6 DNS 服务器）。
@@ -77,20 +77,3 @@
 4.  **`RA-Service`**：告知 LAN 端获取 IPv6 地址的主机，其上级路由服务器是哪个。
 
 **注意**：通常情况下，联通、移动、电信等运营商都会提供 IPv6-PD（前缀委派），此时无需使用中继方案，只需在 LAN 端开启 DHCPv6 服务器即可。中继方案主要用于 WAN 口只能获取 `/64` 地址且无法向下分配的情况。
-
-## 已知问题与解决方案
-
-**OpenWrt 21.02 版本已知问题**：
-*   当启用软件流卸载（Software Flow Offloading）时，可能会导致 IPv6 数据包丢失（断流）。
-*   **解决方案**：关闭软件流卸载。此功能默认是关闭的。
-
-    *   **原文参考**：
-        ```
-        Known issues
-        Some IPv6 packets are dropped when software flow offloading is used: FS#3373
-        As a workaround, do not activate software flow offloading, it is deactivate by default.
-        ```
-
-## 中文改版 OpenWrt 的特殊情况
-
-部分中文改版 OpenWrt 可能没有 `Designated master` 选项。在这种情况下，您需要通过 SSH 修改配置文件。请参考相关中文资料进行操作。
