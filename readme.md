@@ -137,15 +137,13 @@ EUI-64 允许设备的后缀地址由 MAC 地址生成，从而生成唯一的�
 
 至此，OpenWrt 的 IPv6 功能设置完毕。
 
-### Lean's LEDE 设置方案
+### IPv6 中继（透传）方案
 
-目前本人所有设备均不再使用 Lean's LEDE 源码固件，仅因个人更偏好官方版和 ImmortalWrt。因此，未来将不再提供 LEDE 的设置方案。
+如果您遇到运营商无法提供 IPv6-PD 地址，或者希望 LAN 端设备直接获取原生公网 IPv6 地址，可以考虑使用 IPv6 中继（透传）方案。该方案设置简单，性能更优，避免了复杂的 NAT6 配置。
 
-请自行摸索相关设置，设置内容与 OpenWrt 方案相似。
-以下图片仅供参考：
+详细设置请参考：[IPv6 中继方案：告别 NAT6，实现原生公网 IPv6 地址](./ipv6中继.md)
 
-![LEDE IPv6 设置 1](https://web.archive.org/web/20250410000101im_/https://github.com/Aethersailor/Custom_OpenClash_Rules/raw/main/doc/ipv6/lede/pics/lede6-1.png)
-![LEDE DHCPv6 设置](https://web.archive.org/web/20250410000101im_/https://github.com/Aethersailor/Custom_OpenClash_Rules/raw/main/doc/ipv6/lede/pics/dhcpv6.png)
+
 
 ## IPv6 端口转发的正确设置
 
