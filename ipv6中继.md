@@ -37,35 +37,35 @@
 
 1.  **DHCP Server 设置**：
     *   进入 WAN6 接口的 DHCP Server 设置。
-    *   勾选 `Ignore interface`（忽略此接口）。
+    *   勾选 `Ignore interface` (忽略此接口)。
 
 2.  **IPv6 Settings**：
-    *   勾选 `Designated master`（指定为主）。
+    *   勾选 `Designated master` (指定为主)。
 
 3.  **RA-Service, DHCPv6-Service, NDP-Proxy**：
-    *   将这三个下拉框全部设置为 `relay mode`（中继模式）。
+    *   将这三个下拉框全部设置为 `relay mode` (中继模式)。
 
 4.  **Learn routes**：
-    *   勾选 `Learn routes`（学习路由）。
+    *   勾选 `Learn routes` (学习路由)。
 
-5.  点击 `Save`（保存）。
+5.  点击 `Save` (保存)。
 
 ### LAN 接口配置
 
 1.  **DHCP Server 设置**：
     *   进入 LAN 接口的 DHCP Server 设置。
-    *   在 `IPv6 Settings` 中：
-        *   `RA-Service` 设置为 `relay mode`（中继模式）。
-        *   `DHCPv6-Service` 设置为 `hybrid`（混合模式）。
-        *   `NDP-Proxy` 设置为 `relay mode`（中继模式）。
+    *   在 `IPv6 Settings` (IPv6 设置) 中：
+        *   `RA-Service` 设置为 `relay mode` (中继模式)。
+        *   `DHCPv6-Service` 设置为 `hybrid` (混合模式)。
+        *   `NDP-Proxy` 设置为 `relay mode` (中继模式)。
 
 2.  **Local IPv6 DNS server**：
-    *   勾选 `Local IPv6 DNS server`（本地 IPv6 DNS 服务器）。
+    *   勾选 `Local IPv6 DNS server` (本地 IPv6 DNS 服务器)。
 
 3.  **Learn routes**：
-    *   勾选 `Learn routes`。
+    *   勾选 `Learn routes` (学习路由)。
 
-4.  点击 `Save`。
+4.  点击 `Save` (保存)。
 
 完成上述配置后，LAN 端设备即可通过 WAN 端获取原生 IPv6 地址。您还可以根据需要设置 IPv6 防火墙规则。
 
